@@ -1,18 +1,19 @@
 public class bubbleSorter
 {
 
-    public static void bubble (int [] arr)
+    public static int [] bubble (int [] in)
     {
+        int [] out = in;
         boolean unsorted = true;
         boolean hasChanged;
         while (unsorted)
         {
             hasChanged = false;
-            for (int i = 0; i < arr.length -1;i++)
+            for (int i = 0; i < out.length -1;i++)
             {
-                if (arr[i] > arr[i+1])
+                if (out[i] > out[i+1])
                 {
-                    sortingUtil.swap(arr,i,i+1);
+                    sortingUtil.swap(out,i,i+1);
                     hasChanged = true;
                 }
             }
@@ -21,6 +22,8 @@ public class bubbleSorter
                 unsorted = false;
             }
         }
+
+        return out;
     }
 
 

@@ -31,7 +31,7 @@ public class sortingUtil
 
     public static boolean isSorted (int [] in)
     {
-        for (int i = 0; i < in.length; i++)
+        for (int i = 0; i < in.length -1; i++)
         {
             if (in[i] > in [i+1])
             {
