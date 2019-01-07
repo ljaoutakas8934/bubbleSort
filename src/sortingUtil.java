@@ -29,5 +29,36 @@ public class sortingUtil
         System.out.println(out);
     }
 
+    public static boolean isSorted (int [] in)
+    {
+        for (int i = 0; i < in.length; i++)
+        {
+            if (in[i] > in [i+1])
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean checkSum (int [] a, int [] b)
+    {
+        int sum1 = 0;
+        int sum2 = 0;
+
+        if (a.length != b.length)
+        {
+            return false;
+        }
+        for (int i = 0; i < a.length; i++)
+        {
+            sum2 = sum2 + b[i];
+            sum1 = sum1 + a[i];
+        }
+
+        return sum1 == sum2;
+
+    }
+
 
 }
