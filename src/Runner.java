@@ -7,7 +7,8 @@ public class Runner
         sortingUtil.printArr(before);
         int [] after = bubbleSorter.bubble(before);
         sortingUtil.printArr(after);
-
+        System.out.println("B:");
+        sortingUtil.printArr(before);
         System.out.println("Before is sorted? " + sortingUtil.isSorted(before));
         System.out.println("After is sorted? " + sortingUtil.isSorted(after));
     }

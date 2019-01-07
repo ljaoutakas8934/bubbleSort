@@ -13,7 +13,7 @@ public class bubbleSorter
             {
                 if (out[i] > out[i+1])
                 {
-                    sortingUtil.swap(out,i,i+1);
+                    sortingUtil.swap(out, i,i+1);
                     hasChanged = true;
                 }
             }
